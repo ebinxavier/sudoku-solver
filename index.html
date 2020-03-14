@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Sudoku Solver</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">SUDOKU SOLVER</h1>
+    <div class="container">
+        <div class="board">
+            <div class="row">
+                <input type="text" id="00">
+                <input type="text" id="01">
+                <input type="text" id="02">
+
+                <span class="spacer"/>
+
+                <input type="text" id="03">
+                <input type="text" id="04">
+                <input type="text" id="05">
+
+                <span class="spacer"/>
+
+                <input type="text" id="06">
+                <input type="text" id="07">
+                <input type="text" id="08">
+            </div>
+
+            <div class="row">
+                <input type="text" id="10">
+                <input type="text" id="11">
+                <input type="text" id="12">
+
+                <span class="spacer"/>
+
+                <input type="text" id="13">
+                <input type="text" id="14">
+                <input type="text" id="15">
+
+                <span class="spacer"/>
+
+                <input type="text" id="16">
+                <input type="text" id="17">
+                <input type="text" id="18">
+            </div>
+
+            <div class="row">
+                <input type="text" id="20">
+                <input type="text" id="21">
+                <input type="text" id="22">
+
+                <span class="spacer"/>
+
+                <input type="text" id="23">
+                <input type="text" id="24">
+                <input type="text" id="25">
+
+                <span class="spacer"/>
+
+                <input type="text" id="26">
+                <input type="text" id="27">
+                <input type="text" id="28">
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="row">
+                <input type="text" id="30">
+                <input type="text" id="31">
+                <input type="text" id="32">
+
+                <span class="spacer"/>
+
+                <input type="text" id="33">
+                <input type="text" id="34">
+                <input type="text" id="35">
+
+                <span class="spacer"/>
+
+                <input type="text" id="36">
+                <input type="text" id="37">
+                <input type="text" id="38">
+            </div>
+
+            <div class="row">
+                <input type="text" id="40">
+                <input type="text" id="41">
+                <input type="text" id="42">
+
+                <span class="spacer"/>
+
+                <input type="text" id="43">
+                <input type="text" id="44">
+                <input type="text" id="45">
+
+                <span class="spacer"/>
+
+                <input type="text" id="46">
+                <input type="text" id="47">
+                <input type="text" id="48">
+            </div>
+
+            <div class="row">
+                <input type="text" id="50">
+                <input type="text" id="51">
+                <input type="text" id="52">
+
+                <span class="spacer"/>
+
+                <input type="text" id="53">
+                <input type="text" id="54">
+                <input type="text" id="55">
+
+                <span class="spacer"/>
+
+                <input type="text" id="56">
+                <input type="text" id="57">
+                <input type="text" id="58">
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="row">
+                <input type="text" id="60">
+                <input type="text" id="61">
+                <input type="text" id="62">
+
+                <span class="spacer"/>
+
+                <input type="text" id="63">
+                <input type="text" id="64">
+                <input type="text" id="65">
+
+                <span class="spacer"/>
+
+                <input type="text" id="66">
+                <input type="text" id="67">
+                <input type="text" id="68">
+            </div>
+
+            <div class="row">
+                <input type="text" id="70">
+                <input type="text" id="71">
+                <input type="text" id="72">
+
+                <span class="spacer"/>
+
+                <input type="text" id="73">
+                <input type="text" id="74">
+                <input type="text" id="75">
+
+                <span class="spacer"/>
+
+                <input type="text" id="76">
+                <input type="text" id="77">
+                <input type="text" id="78">
+            </div>
+
+            <div class="row">
+                <input type="text" id="80">
+                <input type="text" id="81">
+                <input type="text" id="82">
+
+                <span class="spacer"/>
+
+                <input type="text" id="83">
+                <input type="text" id="84">
+                <input type="text" id="85">
+
+                <span class="spacer"/>
+
+                <input type="text" id="86">
+                <input type="text" id="87">
+                <input type="text" id="88">
+            </div>
+        </div>
+        <br>
+        <div class="actions">
+            <button class="button" onclick="solveHandler()">SOLVE</button>
+            <p>Ebin Xavier</p>
+            <p><a href="mailto:ebinx7@gmail.com">ebinx7@gmail.com </a></p>
+
+        </div>
+    </div>
+    <!-- For Development Purpose uncomment line below -->
+    <!-- <script src="./solver.js"></script> --> 
+    <script src="./solver-build.js"></script>
+   </body>
+</html>

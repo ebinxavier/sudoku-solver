@@ -1,0 +1,57 @@
+input{
+    border: 1px solid gray;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.row{
+    display: inline-block;
+}
+
+.hr{
+    margin-top: 10px;
+}
+
+.spacer{
+    margin-left: 10px;
+}
+
+.board {
+    text-align: center;
+    border: 1px solid black;
+    width: 280px;
+    padding: 10px 0;
+    display: inline-block;
+    background: darkgray;
+    box-shadow: 0 0 20px 2px;
+}
+.button{
+    margin-top: 10px;
+    background: #1d90ff;
+    width: 50%;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.container{
+    text-align: center;
+}
+
+html{
+    background: dodgerblue;
+}
+
+.actions{
+    width: 280px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.actions p{
+    padding: 0px;
+    margin: 10px 10px;
+    font-size: 12px;
+}
