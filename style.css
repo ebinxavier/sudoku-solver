@@ -3,6 +3,8 @@ input{
     width: 20px;
     height: 20px;
     text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .row{
@@ -26,9 +28,27 @@ input{
     background: darkgray;
     box-shadow: 0 0 20px 2px;
 }
-.button{
+.button1{
     margin-top: 10px;
-    background: #1d90ff;
+    background: cornflowerblue;
+    width: 50%;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button2{
+    margin-top: 10px;
+    background: lightcoral;
+    width: 50%;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button3{
+    margin-top: 10px;
+    background: lightgreen;
     width: 50%;
     height: 30px;
     font-weight: bold;
