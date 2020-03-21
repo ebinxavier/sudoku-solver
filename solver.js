@@ -35,16 +35,30 @@ class Sudoku {
         return this.state.map(row=>row[column]);
     }
 
-    chechNumberExistsInRow(row, number){
+    checkNumberExistsInRow(row, number){
         return this.getRow(row).includes(number);
     }
-    chechNumberExistsInColumn(column, number){
+    checkNumberExistsInColumn(column, number){
         return this.getColumn(column).includes(number);
+    }
+    checkNumberExistsInBox(row, column, number){
+        const boxX = parseInt(row / 3) * 3;
+        const boxY = parseInt(column / 3) * 3;
+        for( let i=boxX; i<boxX+3; i++){
+            for(let j=boxY; j<boxY+3; j++){
+                if(this.state[i][j] === number) return true;
+            }
+        }
+        return false;
     }
 
     getPossibleValues(row, column){
         if(this.state[row][column]) return [];
-        return this.allNumbers.filter(number=>!this.chechNumberExistsInColumn(column, number) && !this.chechNumberExistsInRow(row, number))
+        return this.allNumbers.filter(number=>
+            !this.checkNumberExistsInColumn(column, number) && 
+            !this.checkNumberExistsInRow(row, number) && 
+            !this.checkNumberExistsInBox(row, column, number)
+            )
     }
 
     print(){
@@ -96,6 +110,7 @@ const solve = (sudoku)=>{
 
 function solveHandler(){
     let str ='';
+    gameSolved = false;
     try{
         for(let i=0;i<9;i++){
             for(let j=0;j<9;j++){
