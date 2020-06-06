@@ -22,7 +22,7 @@ input{
 .board {
     text-align: center;
     border: 1px solid black;
-    width: 280px;
+    width: 300px;
     padding: 10px 0;
     display: inline-block;
     background: darkgray;
